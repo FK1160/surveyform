@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="index.css" rel="stylesheet">
+     <link rel="stylesheet" href="bootstrap-icons/icons-1.5.0/font/bootstrap-icons.css">
+     
+     <title>Survey Form</title>
+ </head>
+ <body>
+   <nav id="navBar">
+
+    <i class="bi bi-bullseye">SR</i>
+    <ul>
+      <li class="listItems">FOOD</a></li>
+      <li class="listItems">SHOES</a></li>
+      <li class="listItems">SPORTS</a></li>
+    </ul>
+   </nav>
+
+   <div class="surveySliderMain">
+   <div class="surveySlider">
+<div class="surveySliderItem">
+  <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Voluptas pariatur quaerat eius, delectus 
+  deleniti voluptatibus odit laboriosam accusamus nisi,<br> architecto mollitia optio earum. Quidem laboriosam nemo nostrum 
+  odio eius porro!</h2>
+  
+  <div class="surveyButtonMain">
+  <a href="#foodformStart"><button class="surveyButton">START</button></a>
+</div>
+
+</div>
+<div class="surveySliderItem">
+  <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Voluptas pariatur quaerat eius, delectus 
+  deleniti voluptatibus odit laboriosam accusamus nisi,<br> architecto mollitia optio earum. Quidem laboriosam nemo nostrum 
+  odio eius porro!</h2>
+  <div class="surveyButtonMain">
+    <a href="#shoesformStart"><button class="surveyButton">START</button></a>
+</div>
+
+  
+    
+</div>
+<div class="surveySliderItem">
+  <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>Voluptas pariatur quaerat eius, delectus 
+  deleniti voluptatibus odit laboriosam accusamus nisi,<br> architecto mollitia optio earum. Quidem laboriosam nemo nostrum 
+  odio eius porro!</h2>
+  <div class="surveyButtonMain">
+    <a href="#sportsformStart"><button class="surveyButton">START</button></a>
+  </div>
+  
+    
+      
+</div>
+</div>
+</div>
+
+<div class="AboutUsMain">
+<div class="AboutUs">
+  <i class="bi bi-umbrella"></i>
+  <span class="iconText">Raining skies</span>
+  </div>
+  <div class="AboutUs">
+  <i class="bi bi-trophy"></i>
+  <span class="iconText">Stand a chance to win awesome prizes</span>
+  </div>
+  <div class="AboutUs">
+  <i class="bi bi-hand-thumbs-up"></i>
+  <span class="iconText">Choose your way</span>
+  </div>
+  <div class="AboutUs">
+  <i class="bi bi-dice-3"></i>
+  <span class="iconText">3 choices</span>
+  </div>
+</div>
+
+
+
+  
+    <div class="foodForm" id="foodformStart">
+     
+      <div class="foodSlider" >
+      <div class="foodFormInput" id="foodDetails">
+        <h3 class="foodFormText">Just a little formalities.....</h3>
+      <form action="">
+        <label for="fullname">Full Name</label>
+        <br><br>
+        <input type="text" name="fullname" id="fullNameInput" placeholder="Enter Your Full Name">
+  <br>  <br>
+        <label for="email">Email</label>
+        <br><br>
+        <input type="email" name="email" id="emailInput" placeholder="Enter Your Email">
+  <br>  <br>
+        <label for="age">Age</label>
+        <br><br>
+        <input type="number" name="age" id="ageInput" placeholder="Enter Your Age">
+  <br>  <br>
+</form>
+        <button onclick="foodSubmitLoader()"  class="foodSubmitDetailsButton">Submit and start survey</button>
+        <br>
+        <p><a class="foodLink" href="#">What we use your data for?</a></p>
+       <p> <a class="foodLink" href="#">Terms & Privacy</a></p>
+  
+      
+  </div>
+<div id="loader"></div>
+  <div id="foodQuestions" class="animate-bottom" style="display: none;">
+  <h2>Which do you prefer?(Select 5)</h2>
+  <br>
+  <div id="foodQuestionSlider">
+
+    <div id="foodQuestionSliderItem">
+  <label for="box" class="container"><img src="food/food2.jpg" alt="">
+ <input type="checkbox" id="box">
+ <span class="checkmark"></span>
+</label>
+<span class="foodQuestionsTitles">Burger</span>
+  </div>
+
+  <div id="foodQuestionSliderItem">
+    <label for="box2" class="container"><img src="food/food2.jpg" alt="">
+      <input type="checkbox" id="box2">
+      <span class="checkmark2"></span>
+     </label>
+     <span class="foodQuestionsTitles">Burger</span>
+  </div>
+
+  <div id="foodQuestionSliderItem">
+    <label for="box3" class="container"><img src="food/R.jpg" alt="">
+      <input type="checkbox" id="box3">
+      <span class="checkmark"></span>
+     </label>
+     <span class="foodQuestionsTitles">Burger</span>
+  </div>
+
+  <div id="foodQuestionSliderItem">
+    <label for="box4" class="container"><img src="food/food2.jpg" alt="">
+      <input type="checkbox" id="box4">
+      <span class="checkmark"></span>
+     </label>
+     <span class="foodQuestionsTitles">Burger</span>
+    </div>
+
+<div id="foodQuestionSliderItem">
+  <label for="box5" class="container"><img src="food/food2.jpg" alt="">
+    <input type="checkbox" id="box5">
+    <span class="checkmark"></span>
+   </label>
+   <span class="foodQuestionsTitles">Burger</span>
+      </div>
+
+    <div id="firstSubmitButton">
+    <button onclick="foodSubmitLoader1()" class="firstSubmitButton">
+NEXT
+    </button>
+    </div>          
+
+
+
+
+</div>
+  </div>
+
+<!---part 2 of questions-->
+
+  <div id="foodQuestions2" class="animate-bottom" style="display: none;">
+    <h2>Which do you prefer?(Select 3)</h2>
+    <br>
+    <div id="foodQuestionSlider2">
+  
+      <div id="foodQuestionSliderItem2">
+    <label for="box6" class="container"><img src="food/food2.jpg" alt="">
+   <input type="checkbox" id="box6">
+   <span class="checkmark"></span>
+  </label>
+  <span class="foodQuestionsTitles">Burger</span>
+    </div>
+  
+    <div id="foodQuestionSliderItem2">
+      <label for="box7" class="container"><img src="food/food2.jpg" alt="">
+        <input type="checkbox" id="box7">
+        <span class="checkmark"></span>
+       </label>
+       <span class="foodQuestionsTitles">Burger</span>
+    </div>
+  
+    <div id="foodQuestionSliderItem2">
+      <label for="box8" class="container"><img src="food/R.jpg" alt="">
+        <input type="checkbox" id="box8">
+        <span class="checkmark"></span>
+       </label>
+       <span class="foodQuestionsTitles">Burger</span>
+    </div>
+  
+    <div id="foodQuestionSliderItem2">
+      <label for="box9" class="container"><img src="food/food2.jpg" alt="">
+        <input type="checkbox" id="box9">
+        <span class="checkmark"></span>
+       </label>
+       <span class="foodQuestionsTitles">Burger</span>
+      </div>
+
+      <div id="firstSubmitButton2">
+      <button onclick="foodSubmitLoader2()" class="firstSubmitButton2">
+  FINISH SURVEY
+      </button>
+      </div>          
+  
+
+  
+  </div>
+    </div>
+</div>
+
+
+    <div id="submitfoodQuestions" class="animate-bottom" style="display: none;">
+      <h3 class="submissionResponse">Your response has been submitted</h3>
+      <span class="submissionResponseCheck"><i class="bi bi-check"></i></span>
+      <br><br><br>
+      <button class="closesubmissionResponse">OK</button>
+    </div>
+
+ 
+  
+
+
+
+<script src="index.js"></script>
+    </body>
+    </html>

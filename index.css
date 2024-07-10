@@ -1,0 +1,497 @@
+html {
+    
+    overflow-x: hidden;
+   
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+overflow-x: hidden;
+
+}
+#navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#navBar i {
+    color: black;
+    font-size: 45px;
+    margin-left: 20px;
+}
+#navBar ul {
+    display: flex;
+}
+#navBar ul li {
+    list-style: none;
+    margin: 10px;
+    cursor: pointer;
+    
+}
+#navBar ul li a { 
+text-decoration: none;
+color: black;
+text-transform: uppercase;
+}
+
+.surveySlider {
+    display: flex;
+    width: 500vw;
+    transition: all 1.0s ease-in-out;
+}
+.surveySliderItem {
+    width: 100vw; 
+    padding-top: 350px;
+    color: white;
+    
+ }
+
+ .surveySliderItem:nth-child(1) h2{
+    margin-top: -190px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+ }
+ .surveySliderItem:nth-child(1){
+    background-image: url("food/food2.jpg");
+    background-size: cover;
+    
+
+}
+.surveySliderItem:nth-child(2) h2{
+    margin-top: -190px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+ }
+ .surveySliderItem:nth-child(2){
+    background-image: url("shoes/shoes.jpg");
+    background-size: cover;
+
+}
+.surveySliderItem:nth-child(3) h2{
+    margin-top: -190px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+ }
+ .surveySliderItem:nth-child(3) {
+    background-image: url("sports/sports1.jpg");
+    background-size: cover;
+
+}
+.rightsliderArrow {
+    display: flex;
+    justify-content: flex-end;
+  position: relative;
+bottom: 11vw;
+right: 6%;
+}
+.rightsliderArrow i {
+    font-size: 50px;
+    cursor: pointer;
+    color: black;
+}
+.rightsliderArrow i:hover {
+    color:darksalmon;
+    transition: all 0.5s ease-in-out;
+}
+.surveyButtonMain {
+display: flex;
+justify-content: center;
+margin-top: 50px;
+
+}
+ .surveyButton {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    z-index: 1;
+    border: none;
+    width: 200px;
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+   
+   
+ }
+ .surveyButton:hover {
+    background-color:darksalmon;
+    transition: all 0.5s ease-in-out;
+ }
+ .AboutUsMain {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: whitesmoke;
+    height: 30vw;
+    
+ }
+ .AboutUs {
+    margin-top: 100px;
+flex-direction: column;
+align-items: center;
+text-align: center;
+ }
+ .AboutUs i  {
+ color: limegreen;
+ font-size: 30px;
+ }
+ .AboutUs span {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    text-align: center;
+    position: relative;
+ }
+
+
+.foodForm {
+
+}
+.foodTitle {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.foodFormText {
+   text-align: center;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.foodSlider {
+display: flex;
+justify-content: center;
+
+transition: all 1.0s ease-in-out;
+}
+
+.foodFormInput {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.foodFormInput label {
+   font-size: 18px;
+}
+.foodFormInput input {
+   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    width: 60vw;
+}
+.foodSubmitDetailsButton {
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   z-index: 1;
+   border: none;
+   width: 100%;
+   padding: 10px;
+   background-color: black;
+   text-align: center;
+   font-size: 20px;
+   color: white;
+   cursor: pointer;
+}
+.foodSubmitDetailsButton:hover {
+   background-color:darksalmon;
+   transition: all 0.5s ease-in-out;
+}
+.foodSubmitButton {
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   z-index: 1;
+   border: none;
+   width: 61.7%;
+   padding: 10px;
+   background-color: black;
+   text-align: center;
+   font-size: 20px;
+   color: white;
+   cursor: pointer;
+}
+.foodSubmitButton:hover {
+   background-color:darksalmon;
+    transition: all 0.5s ease-in-out;
+}
+.foodLink {
+   color: black;
+}
+.foodLink:hover {
+   color:darksalmon;
+   transition: all 0.5s ease-in-out;
+}
+#foodFormInput1 {
+   transition: all 0.5s ease-in-out;
+}
+
+#loader {
+   position: absolute;
+   left: 50%;
+   right: 50%;
+   z-index: 1;
+   width: 120px;
+   height: 120px;
+   margin: -76px  0 0 -76px;
+   border:  16px solid #f3f3f3;
+   border-radius: 50%;
+   border-top: 16px solid #3498db;
+   border-bottom: 16px solid orange;
+   border-left: 16px solid red;
+   border-right: 16px solid purple;
+   -webkit-animation: spin 2s linear infinite;
+   animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+   0% {
+      -webkit-transform: rotate(0deg);
+   }
+   100% {
+      -webkit-transform: rotate(360deg);
+   }
+}
+@keyframes spin {
+   0% {
+      transform: rotate(0deg);
+   }
+   100% {
+      transform: rotate(360deg);
+   }
+}
+.animate-bottom {
+   position: relative;
+   -webkit-animation-name: animatebottom;
+   -webkit-animation-duration: 1s;
+   animation-name: animatebottom;
+   animation-duration: 1s;
+}
+@-webkit-keyframes animatebottom {
+from {
+   bottom: -100px;
+   opacity: 0;
+}
+to {
+   bottom: 0px;
+   opacity: 1;
+}
+}
+
+@keyframes amimatebottom {
+   from {
+      bottom: -100px;
+      opacity: 0;
+   }
+   to {
+      bottom:0;
+      opacity: 1;
+   }
+}
+
+#foodQuestions, #foodQuestions2 {
+   text-transform: uppercase;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   display: none;
+   text-align: center;
+   margin: 20px;
+}
+#foodQuestionSlider{
+   display:grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: repeat(10, 5vw);
+   grid-gap: 15px;
+} 
+#foodQuestionSlider2 {
+   display:grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(10, 5vw);
+   grid-gap: 15px;
+} 
+#foodQuestionSliderItem img, #foodQuestionSliderItem2 img {
+   width: 100%;
+   height: auto;
+   max-width: 400px;
+   cursor: pointer;
+   border-radius: 10px;
+}
+#foodQuestionSliderItem img:hover, #foodQuestionSliderItem2 img:hover {
+   transition: all 0.5s ease-in-out;
+   opacity: 0.7;
+}
+
+.firstSubmitButton, .firstSubmitButton2  {
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   z-index: 1;
+   border: none;
+   width: 10%;
+   padding: 10px;
+   background-color: black;
+   text-align: center;
+   font-size: 20px;
+   color: white;
+   cursor: pointer;
+   position: absolute;
+   bottom: 60%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   left: 46%;
+}
+.firstSubmitButton:hover, .firstSubmitButton2:hover {
+   background-color:darksalmon;
+   transition: all 0.5s ease-in-out;
+}
+
+
+#submitfoodQuestions {
+   display: flex;
+   text-transform: uppercase;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   width: 30%;
+   height: 30%;
+    background-color: white;
+    position: fixed;
+    top: 30%;
+    bottom: 0;
+    left:35%;
+    right: 0;
+    border-radius: 10px;
+    box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.47);
+   }
+  
+   .submissionResponse {
+      display: flex;
+      justify-content: center;
+      
+   }
+   .submissionResponseCheck {
+      font-size: 50px;
+      color: white;
+      background-color: limegreen;
+      border-radius: 10%;
+   }
+   .closesubmissionResponse {
+      background-color: black;
+      color: white;
+      width: 60%;
+      height: 20%;
+      cursor: pointer;
+      border: black;
+      
+   }
+   .closesubmissionResponse:hover {
+      background-color: darksalmon;
+      transition: all 0.5s ease-in-out; 
+      border: darksalmon;
+   }
+
+   @media screen and (max-width:800px) {
+      .AboutUsMain {
+         display: none;
+       
+         
+      }
+   
+   #foodQuestionSlider{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 30vw);
+      grid-gap: 45px;
+   } 
+   #foodQuestionSlider2 {
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 30vw);
+      grid-gap: 15px;
+   } 
+   #submitfoodQuestions {
+      display: flex;
+      text-transform: uppercase;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 50%;
+      height: 50%;
+       background-color: white;
+       position: fixed;
+       top: 30%;
+       bottom: 0;
+       left:28%;
+       right: 0;
+       border-radius: 10px;
+       box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.47);
+      }
+      .closesubmissionResponse {
+         background-color: black;
+         color: white;
+         width: 60%;
+         height: 20%;
+         cursor: pointer;
+         border: black;
+         
+      }
+}
+
+   @media screen and (max-width:600px) {
+      .AboutUsMain {
+         display: none;
+       
+         
+      }
+      #foodQuestionSlider{
+         display:grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(1, 20vw);
+         grid-gap: 105px;
+      } 
+      #foodQuestionSlider2{
+         display:grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-rows: repeat(1, 20vw);
+         grid-gap: 105px;
+      } 
+   }
+ 
+
+   @media screen and (max-width:500px) {
+      .AboutUsMain {
+         display: none;
+       
+         
+      }
+      #foodQuestionSlider{
+         display:grid;
+         grid-template-columns: repeat(1, 1fr);
+         grid-template-rows: repeat(1, 45vw);
+         grid-gap: 105px;
+      } 
+      #foodQuestionSlider2{
+         display:grid;
+         grid-template-columns: repeat(1, 1fr);
+         grid-template-rows: repeat(1, 45vw);
+         grid-gap: 105px;
+      } 
+      #submitfoodQuestions {
+         display: flex;
+         text-transform: uppercase;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+         width: 80%;
+         height: 50%;
+          background-color: white;
+          position: fixed;
+          top: 30%;
+          bottom: 0;
+          left:10%;
+          right: 0;
+          border-radius: 10px;
+          box-shadow: 10px 10px 27px 0px rgba(0,0,0,0.47);
+         }
+         .closesubmissionResponse {
+            background-color: black;
+            color: white;
+            width: 80%;
+            height: 20%;
+            cursor: pointer;
+            border: black;
+            
+         }
+   }
